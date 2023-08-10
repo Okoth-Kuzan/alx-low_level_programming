@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - C program 
+ * main - C program
  *
  * Return: 0 (Success)
  */

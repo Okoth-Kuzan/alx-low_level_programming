@@ -15,20 +15,20 @@ int main(void)
 		{
 			for (k = j + 1; k <= 9; k++)
 			{
-				if (k > j && j > i)
+				putchar('0' + i);
+				putchar('0' + j);
+				putchar('0' + k);
+
+				if (i != 7 || j != 8 || k != 9)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
-					if (i != 7 || j!= 8)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }

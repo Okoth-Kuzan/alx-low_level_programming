@@ -18,7 +18,7 @@ int main(void)
 				if (k > j && j > i)
 				{
 					putchar(i);
-					outchar(j);
+					putchar(j);
 					putchar(k);
 					if (i != 7 || j!= 8)
 					{

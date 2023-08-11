@@ -5,21 +5,17 @@
  *
  * Return: 0 (Success)
  */
-int main(void) {
-    char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-    int i;
+int main(void)
+{
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-    for (i = 0; i < 26; i++) {
-        printf("%c\n", 'a' + i);
-    }
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alp[i]);
+	}
 
-    putchar('\n');
+	putchar('\n');
 
-    for (i = 0; i < 26; i++) {
-        putchar(alp[i]);
-    }
-
-    putchar('\n');
-
-    return 0;
+	return (0);
 }

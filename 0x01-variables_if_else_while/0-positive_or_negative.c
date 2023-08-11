@@ -11,19 +11,19 @@ int main(void)
 {
 	int n;
 
-	srand(time(0))
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%lu is positive\n", n);
+		printf("%u is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("%lu is zero \n", n);
+		printf("%u is zero \n", n);
 	}
 	else
 	{
-		printf("%lu is negative\n", n);
+		printf("%u is negative\n", n);
 	}
 	return (0);
 }

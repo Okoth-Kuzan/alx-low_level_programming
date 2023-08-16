@@ -34,10 +34,10 @@ void times_table(void)
 				_putchar((product / 10) + '0');
 			}
 
-			_putchar((product % 10) + '0')
+			_putchar((product % 10) + '0');
 				column++;
 		}
 		_putchar('\n');
-		row++
+		row++;
 	}
 }

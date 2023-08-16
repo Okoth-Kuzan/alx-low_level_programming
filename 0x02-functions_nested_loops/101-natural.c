@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Lists all the natural numbers below 1024 (excluded)
- *        that are multiples of 3 or 5.
+ * main - Lists all mulyiples of 3 and 5 below 1024
  *
- * Return: Always 0.
+ * Return: 0 (Success)
  */
 int main(void)
 {

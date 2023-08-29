@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - searches a string 
+ * _strpbrk - searches a string
  * @s: input
  * @accept: input
  * Return: 0 (Success)

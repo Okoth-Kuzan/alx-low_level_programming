@@ -8,22 +8,25 @@
  *
  * Return: Address of the new element(Success) or NULL(error)
  */
+
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
-	unsigned int e = 0;
+	list_t *e = malloc(sizeof(list_t));
 
-	while (str[e])
-		e++;
-
-	new = malloc(sizeof(list_t));
-	if (!new)
+	if (!head || !e)
 		return (NULL);
-	new->str = strdup(str);
-	new->e = e;
-	new->next = (*head);
-	(*head) = new;
+	if (str)
+	{
+		e->str = strdup(str);
+		if (!e->str)
+		{
+			free(e);
+			return (NULL);
+		}
+		e->len = _strlen(e->str);
+	}
 
-	return (*head);
+	e->next = *head;
+	*head = e;
+	return (e);
 }
-

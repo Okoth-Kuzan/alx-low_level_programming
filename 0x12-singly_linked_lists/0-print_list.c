@@ -6,6 +6,7 @@
  *
  * Return: integer length of string
  */
+
 int _strlen(char *s)
 {
 	int e = 0;
@@ -23,15 +24,17 @@ int _strlen(char *s)
  *
  * Return: the number of nodes
  */
+
 size_t print_list(const list_t *h)
 {
-	size_t e = 0;
+	size_t count = 0;
 
-	while (h)
+	while (h != NULL)
 	{
-		printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
+		printf("[%d] %s\n", (h->str ? h->len : 0), (h->str ? h->str : "(nil)"));
 		h = h->next;
-		e++;
+		count++;
 	}
-	return (e);
+
+	return (count);
 }

@@ -1,18 +1,6 @@
 #include "hash_tables.h"
 
 /**
- * key_index - Calculates the index for a key in the hash table
- * @key: Key string for which index needs to be calculated
- * @size: Size of the hash table array
- *
- * Return: Calculated index value
- */
-unsigned long int key_index(const unsigned char *key, unsigned long int size)
-{
-	return (hash_djb2(key) % size);
-}
-
-/**
  * hash_table_set - Adds or updates a key-value pair in the hash table
  * @ht: Pointer to the hash table
  * @key: Key string to be added/updated

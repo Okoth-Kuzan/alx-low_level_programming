@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "hash_tables.h"
 
 /**
@@ -31,33 +28,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 		ht->array[i] = NULL;
 
 	return (ht);
-}
-
-/**
- * hash_djb2 - Hash function implementing the djb2 algorithm
- * @str: Input string to hash
- * Return: Calculated hash value
- */
-unsigned long int hash_djb2(const unsigned char *str)
-{
-	unsigned long int hash = 5381;
-	int c;
-
-	while ((c = *str++))
-		hash = ((hash << 5) + hash) + c;
-
-	return (hash);
-}
-
-/**
- * key_index - Get the index of a key in the hash table
- * @key: Input key string
- * @size: Size of the hash table
- * Return: Calculated index for the key
- */
-unsigned long int key_index(const unsigned char *key, unsigned long int size)
-{
-	return (hash_djb2(key) % size);
 }
 
 /**
